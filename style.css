@@ -40,3 +40,36 @@ button {
     color: white; font-weight: bold; cursor: pointer; transition: 0.3s;
 }
 button:hover { background: #00f2fe; transform: translateY(-2px); }
+/* MOBILE STYLES (For screens smaller than 768px) */
+@media (max-width: 768px) {
+    /* 1. Make the glass cards take up more width on small screens */
+    .glass-card {
+        width: 90% !important; 
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    /* 2. Stack the navigation bar items vertically */
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-bar a {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 3. Adjust headers for small screens */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 4. Ensure input fields are easy to tap with fingers */
+    input, button {
+        font-size: 16px; /* Prevents iOS from auto-zooming on click */
+        padding: 15px;
+    }
+}
