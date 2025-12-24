@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "rewrites": [
-    { "source": "/register-student", "destination": "/server.js" },
-    { "source": "/(.*)", "destination": "/$1" }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/register-student", "dest": "/server.js" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
